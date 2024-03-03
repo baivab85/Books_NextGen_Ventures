@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to right, #124076, #114232);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.book-info img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-info img:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  flex-grow: 1;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  background-color: #ffcc00;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f2a007;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.prev-button {
+  background-color: #4285F4;
+}
+
+.next-button {
+  background-color: #34A853;
+}
